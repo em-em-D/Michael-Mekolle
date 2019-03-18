@@ -1,13 +1,12 @@
 <!DOCTYPE html>
-<html >
+<html>
   <head>
     <meta charset="UTF-8">
 
     <link rel="stylesheet" href="css/style.css">
     <title>
   our portfolio
-    </tittle>
-
+    </title>
 
     <style>
 
@@ -23,14 +22,14 @@
     header {
       background-color: black;
       background-image:url("rom.jpg");
-      padding: 30px;
+      padding: 10px;
       text-align: center;
-      font-size: 35px;
+      font-size: 20px;
       color: white;
     }
 
     /* Container for flexboxes */
-    section {
+    #about {
       display: -webkit-flex;
       display: flex;
     }
@@ -54,6 +53,21 @@
       padding: 20px;
 
 
+    }
+
+    #welcome-section {
+      margin-top: 100px;
+      text-align: center;
+    }
+
+    #projects {
+      margin-top: 100px;
+      text-align: center;
+    }
+
+    .project-title{
+        color: blue;
+        text-align: center;
     }
 
     /* Style the list inside the menu */
@@ -98,16 +112,35 @@
 
 
   <body>
-
+      <script src="https://cdn.freecodecamp.org/testable-projects-fcc/v1/bundle.js"></script>
 
 <header>
-  <h2>PORTFOLIO</h2>
+  <h2>MY PORTFOLIO</h2>
 </header>
-
-<section>
+<nav id="navbar">
+  <ul>
+    <li><a href="#welcome-section">Home</a></li>
+    <li><a href="#about">About</a></li>
+    <li><a href="#">Contact</a></li>
+  </ul>
+</nav>
+<section id="welcome-section">
+   <h1>Hey! I'm <span style="color:green">Alan Snow</span></h1>
+   <h2>And I'm a software developer</h2>
+</section>
+<section id="projects">
+  <h1>Projects</h1>
+  <ul>
+    <li class="project-title"><a href="#">Web based Medical Record System</a></li>
+    <li class="project-title">RTP and SDP implementation with javascript</li>
+    <li class="project-title">Web Tracking Application</li>
+    <li class="project-title">Logistics Transport System<li>
+  </ul>
+</section>
+<section id="about">
   <nav>
 
-      <img src ="mil2.jpg"></img>
+      <img src ="img/mil2.jpg"></img>
 	  <table id= "name">
 	 <tr><th><h1>ALAN</h1></th>
 
